@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.flex{
+    height: 200px;
+    flex-grow: 1;
+}
+.flex-box1 {
+    background-color: rgba(63, 62, 156, 0.315);
+}
+.flex-box2 {
+    background-color: darkorchid;
+}
+.flex-box3 {
+    background-color: rgb(14, 90, 7);
+}
+.flex-box4 {
+    background-color: rgb(185, 214, 54);
+}
+.flex-box5 {
+    background-color: rgb(209, 132, 17);
+}
+.flex-box6 {
+    background-color: rgb(109, 72, 4);
+}
+.flex-box7 {
+    background-color: rgb(99, 10, 10);
+}
+
+@media (min-width: 601px) and (max-width:800px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .flex-box1, .flex-box2, .flex-box6, .flex-box7{
+        flex-basis: 100%;
+    }
+    .flex-box3, .flex-box4, .flex-box5 {
+        flex-grow: 2;
+    }
+} 
+
+@media (min-width: 801px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .flex-box1, .flex-box2 {
+        flex-basis: 50%;
+        flex-grow: 2;
+    }
+    .flex-box3, .flex-box4, .flex-box5 {
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
+    .flex-box6, .flex-box7 {
+        flex-grow: 2;
+        flex-basis: 50%;
+    }
+} 
+section div {
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-overflow: ellipsis;
+    color: white;
+    
+}
